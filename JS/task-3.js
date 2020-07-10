@@ -11,15 +11,12 @@
 // let message;
 
 const ADMIN_PASSWORD = "jqueryismyjam";
-let message;
+let message = prompt("Your password?");
 
-switch ((message = prompt("Your password?"))) {
-  case null:
-    alert("Отменено пользователем!");
-    break;
-  case "jqueryismyjam":
-    alert("Добро пожаловать!");
-    break;
-  default:
-    alert("Доступ запрещен, неверный пароль!");
+if (message === null) {
+  alert("Отменено пользователем!");
+} else if (message === "jqueryismyjam") {
+  alert("Добро пожаловать!");
+} else {
+  alert("Доступ запрещен, неверный пароль!");
 }

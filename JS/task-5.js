@@ -15,33 +15,33 @@
 
 let country = prompt("В какую страну желаете оформить доставку?");
 
-let Китай = "Китай";
-let Чили = "Чили";
-let Австралия = "Австралия";
-let Индия = "Индия";
-let Ямайка = "Ямайка";
+const China = "Китай";
+const Chile = "Чили";
+const Australia = "Австралия";
+const India = "Индия";
+const Jamaica = "Ямайка";
 
-const китайКредит = "100";
-const чилиКредит = "250";
-const австралияйКредит = "170";
-const индияКредит = "80";
-const ямвйкаКредит = "120";
+const chinaCredit = "100";
+const chileCredit = "250";
+const australiaCredit = "170";
+const indiaCredit = "80";
+const jamaicaCredit = "120";
 
 switch (country.toLowerCase()) {
   case "китай":
-    alert(`Доставка в ${Китай} будет стоить ${китайКредит} кредитов`);
+    alert(`Доставка в ${China} будет стоить ${chinaCredit} кредитов`);
     break;
   case "чили":
-    alert(`Доставка в ${Чили} будет стоить ${чилиКредит} кредитов`);
+    alert(`Доставка в ${Chile} будет стоить ${chileCredit} кредитов`);
     break;
   case "австралия":
-    alert(`Доставка в ${Австралия} будет стоить ${австралияйКредит} кредитов`);
+    alert(`Доставка в ${Australia} будет стоить ${australiaCredit} кредитов`);
     break;
   case "индия":
-    alert(`Доставка в ${Индия} будет стоить ${индияКредит} кредитов`);
+    alert(`Доставка в ${India} будет стоить ${indiaCredit} кредитов`);
     break;
   case "ямайка":
-    alert(`Доставка в ${Ямайка} будет стоить ${ямвйкаКредит} кредитов`);
+    alert(`Доставка в ${Jamaica} будет стоить ${jamaicaCredit} кредитов`);
     break;
   default:
     alert(`В вашей стране доставка не доступна`);
