@@ -12,15 +12,14 @@ let input;
 let total = 0;
 
 do {
-  let input = prompt("Введите любое число");
+  input = prompt("Введите любое число");
 
-  if (input === null) {
-    console.log("Отменено пользователем!");
-    break;
+  if (Number.isNaN(Number(input))) {
+    alert("Было введено не число, попробуйте еще раз");
+    continue;
   }
 
-  input = Number(input);
-  total = Number(total + input);
+  total += Number(input);
 } while (input !== null);
 
 alert(`Общая сумма чисел равна ${total}`);
